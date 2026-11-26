@@ -38,6 +38,16 @@ footer{text-align:center;padding:18px 16px 40px;color:var(--muted);font-size:.9r
 a{color:var(--accent)}
 [hidden]{display:none!important}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6PQ805599Z"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-6PQ805599Z');
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a.dl');
+  if(a){var l=(a.textContent||'').indexOf('Download')>-1?'en':(a.textContent||'').indexOf('دانلود')>-1&&a.textContent.indexOf('ډاونلوډ')<0?'fa':'ps';
+    gtag('event','apk_download_click',{language:l,version:'1.2'});}
+});
+</script>
 </head>
 <body>
 <header>
